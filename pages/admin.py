@@ -297,7 +297,6 @@ def brand_create_page():
 
     st.write('## ブランド一覧')
     df_brands = pd.DataFrame(brands)
-    df_brands.columns = ['ブランド名', 'ブランドID']
     st.table(df_brands)
 
     with st.form(key='brand'):
