@@ -329,7 +329,6 @@ def state_create_page():
 
     st.write('## 容器一覧')
     df_states = pd.DataFrame(states)
-    df_states.columns = ['容器名', '容器ID']
     st.table(df_states)
 
     with st.form(key='state'):
@@ -362,7 +361,6 @@ def taste_create_page():
 
     st.write('## 味一覧')
     df_tastes = pd.DataFrame(tastes)
-    df_tastes.columns = ['味名', '味ID']
     st.table(df_tastes)
 
     with st.form(key='taste'):
